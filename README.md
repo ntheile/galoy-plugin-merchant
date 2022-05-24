@@ -22,7 +22,7 @@ This enables a plugin and microservice architecure.
 
 Run the merchants subgraph
 ---------------------
-1. `make merchant-subgraph`
+1. `make start`
 2. This should start http://localhost:4003/graphql
 3. you can test this query
 ```
@@ -47,7 +47,7 @@ the galoy-plugin-merchant code)
 "paths": {
 
   "@app/*": ["app/*"],
-  "react-native-galoy-merchant": ["../galoy-plugin-merchant/src/frontend/react-native-galoy-merchant/src"]
+  "react-native-galoy-merchant": ["../galoy-plugin-merchant/src/react-native-galoy-merchant/src"]
 
 }
 
@@ -58,7 +58,7 @@ the galoy-plugin-merchant code)
 
   "dependencies": {
 
-    "react-native-galoy-merchant": "file:../galoy-plugin-merchant/src/frontend/react-native-galoy-merchant/src",
+    "react-native-galoy-merchant": "file:../galoy-plugin-merchant/src/react-native-galoy-merchant/src",
 
 }
 
@@ -68,7 +68,7 @@ the galoy-plugin-merchant code)
 
 extraNodeModules: {
   
-  galoy-plugin-merchant/src/frontend/react-native-galoy-merchant/src")
+  galoy-plugin-merchant/src/react-native-galoy-merchant/src")
 
 }
 

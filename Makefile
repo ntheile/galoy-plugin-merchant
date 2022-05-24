@@ -1,2 +1,2 @@
-merchant-subgraph:
-	cd src/backend/galoy-merchant-subgraph && yarn start
+start:
+	cd src/galoy-merchant-subgraph && yarn start
