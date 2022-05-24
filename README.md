@@ -99,3 +99,5 @@ This was created using this templating tool:
 `react-native-module-template`. See docs here: https://github.com/demchenkoalex/react-native-module-template 
 
 
+
+
