@@ -70,7 +70,7 @@ the galoy-plugin-merchant code)
 
 extraNodeModules: {
   
-  galoy-plugin-merchant/src/react-native-galoy-merchant/src")
+  "react-native-galoy-merchant": path.resolve(__dirname, "../galoy-plugin-merchant/src/react-native-galoy-merchant/src")
 
 }
 
