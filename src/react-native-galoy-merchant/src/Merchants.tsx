@@ -1,46 +1,24 @@
-/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-native/no-inline-styles */
+/* eslint-disable simple-import-sort/imports */
+/* eslint-disable prettier/prettier */
 import { gql, useQuery } from "@apollo/client"
 import React, { useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { Map } from './Map'
 
-const QUERY_MERCHANTS = gql`
-  query merchants {
-    me {
-      id
-      phone
-      defaultAccount {
-        wallets {
-          balance
-        }
-      }
-      merchants {
-        name
-        acceptsBitcoin
-        address
-      }
-    }
-  }
-`
 
 export const Merchants = () => {
 
-  const { data, error , refetch } = useQuery(QUERY_MERCHANTS, {
-    notifyOnNetworkStatusChange: true,
-  })
- 
-
-  useEffect(() => {
-    
-  }, [data])
 
   return (
-    <View style={styles.container}>
-      <Text style={{ color: 'red' }}>
-        Merchants
-        {data ? JSON.stringify(data) : 'loading...'}
-      </Text>
-    </View>
+    <Map />
+    // <View style={styles.container}>
+    //   <Text style={{ color: 'red' }}>
+    //     Merchants
+        
+    //   </Text>
+    // </View>
   )
 }
 

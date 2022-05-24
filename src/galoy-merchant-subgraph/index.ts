@@ -17,6 +17,8 @@ const typeDefs = gql`
         name: String
         address: String
         acceptsBitcoin: Boolean
+        latitude: Float
+        longitude: Float
     }
 
     # Add merchants to the SuperGraph Me query  { 
@@ -32,8 +34,8 @@ const typeDefs = gql`
 `;
 
 const merchantsData = [
-    { id: 1, name: "Three Forks", address: "111 Lavaca St, Austin, TX 78701", acceptsBitcoin: true },
-    { id: 2, name: "Shiners", address: "422 Congress Ave D, Austin, TX 78701", acceptsBitcoin: true },
+    { id: 1, name: "Three Forks", address: "111 Lavaca St, Austin, TX 78701", acceptsBitcoin: true, latitude: 30.26421, longitude: -97.74665 },
+    { id: 2, name: "Shiners", address: "422 Congress Ave D, Austin, TX 78701", acceptsBitcoin: true, latitude: 30.26735, longitude: -97.74349 },
 
 ]
 

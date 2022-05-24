@@ -12,6 +12,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "ES2018",
+    "resolveJsonModule": true
   },
   "exclude": ["**/__tests__/*"],
   "include": ["src"]

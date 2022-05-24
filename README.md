@@ -20,6 +20,8 @@ independently of the Galoy core banking application.
 
 This enables a plugin and microservice architecure. 
 
+![Image](./docs/SuperGraph.png?raw=true)
+
 Run the merchants subgraph
 ---------------------
 1. `make start`
