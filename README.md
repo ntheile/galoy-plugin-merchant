@@ -15,10 +15,10 @@ This project contains two main projects:
   }
 ```
 
-This allow separations of concerns and for sub-components. The pliugins can be developed 
+This allow separations of concerns and for sub-components. The plugins can be developed 
 independently of the Galoy core banking application.
 
-This enables a plugin and microservice architecure. 
+This enables a plugin/extension and microservice architecure. 
 
 ![Image](./docs/SuperGraph.png?raw=true)
 
@@ -42,7 +42,7 @@ Install the react-native component
 -------------------------
 Now we can install the component into galoy-mobile app.
 
-1. Add this to `galoy-mobile/tsconfig.json` (note that itsa relative link to the location you have
+1. Add this to `galoy-mobile/tsconfig.json` (note that it's a relative link to the location you have
 the galoy-plugin-merchant code)
 ```
 
